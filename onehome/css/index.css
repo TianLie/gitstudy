@@ -2,6 +2,7 @@ html,
 body {
   max-width: 640px;
   margin: 0 auto;
+  min-width: 320px;
 }
 /********** 头部 BEGIN **********/
 header {
@@ -178,7 +179,6 @@ header {
 }
 .comment_list_change li:first-child {
   border-right: 1px solid #ededed;
-  position: relative;
 }
 .comment_list_change li:first-child a {
   color: #666666;
@@ -186,14 +186,11 @@ header {
 .comment_list_change li:first-child a::before {
   content: "";
   display: inline-block;
-  position: absolute;
-  top: 7px;
-  left: 36px;
-  width: 14px;
-  height: 14px;
-  line-height: 30px;
-  background: url("../images/change_bg.jpg") 0 0 no-repeat;
-  background-size: 14px 14px;
+  width: 22px;
+  height: 31px;
+  background: url("../images/change_bg.jpg") 0 4px no-repeat;
+  background-size: 16px 18px;
+  vertical-align: middle;
 }
 .comment_list_change li:last-child a {
   color: #fa3f2e;
@@ -228,7 +225,7 @@ header {
 }
 .rendering_money_Box {
   background-color: #fff;
-  width: 95%;
+  width: 93.75%;
   margin: 0 auto;
   border-width: 1px;
   border-style: solid;
@@ -242,11 +239,11 @@ header {
   font-size: 1.4rem;
   height: 47px;
   line-height: 47px;
-  background: url("../images/money_bg.jpg") 42px center no-repeat;
+  background: url("../images/money_bg.jpg") 14.33% center no-repeat;
   background-size: 14px 19px;
 }
 .money_Box_list {
-  width: 284px;
+  width: 94.33%;
   margin: 0 auto;
 }
 .money_Box_list span {
@@ -254,7 +251,7 @@ header {
 }
 .money_Box_list span.money_left {
   float: left;
-  width: 138px;
+  width: 48.76%;
   position: absolute;
 }
 .money_Box_list span.money_left::after {
@@ -265,7 +262,7 @@ header {
 }
 .money_Box_list span.money_right {
   float: right;
-  width: 138px;
+  width: 48.76%;
   position: relative;
 }
 .money_Box_list span.money_right::after {
@@ -370,19 +367,17 @@ header {
 }
 .rendering_strategy_list_box .rendering_strategy_list li {
   margin-bottom: 9px;
-  height: 68px;
 }
 .rendering_strategy_list_box .rendering_strategy_list img {
-  display: inline;
-  width: 100px;
+  display: inline-block;
+  width: 34%;
 }
 .rendering_strategy_list_box .rendering_strategy_list dl {
   display: inline-block;
-  width: 180px;
+  width: 61.86%;
   vertical-align: top;
   margin-top: 5px;
   margin-left: 8px;
-  height: 68px;
 }
 .rendering_strategy_list_box .rendering_strategy_list dt {
   font-size: 1rem;
@@ -399,8 +394,9 @@ header {
   margin-top: 6px;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-text-overflow: ellipsis;
-  height: 35px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .rendering_process_box {
   margin-top: 9px;

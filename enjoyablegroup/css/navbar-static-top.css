@@ -1,0 +1,15 @@
+body {
+  min-height: 2000px;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+/*Static navbar */
+.navbar{
+	background-color: #fff;
+}
+.navbar-default{
+	border-bottom: 1px solid #c8c8c8;
+	box-shadow: none 3px 3px #dedede;
+}
