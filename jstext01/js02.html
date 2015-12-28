@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业：2、判断一个整数是否奇数；</title>
+</head>
+<body>
+	<p>2.判断一个整数是否奇数：整数不能被2整除</p>
+		<form name="f">
+		<input name="num" value="" placeholder="请输入整数">
+		<button id="btn" onclick="init();">输入</button></form>
+	<script type="text/javascript">
+	function init(){
+		var num = document.f.num.value;
+		((num %2 != 0) && (num != 0)) ? (alert(num + "为奇数")):alert((num + "为偶数"));
+	}
+	</script>
+</body>
+</html>
