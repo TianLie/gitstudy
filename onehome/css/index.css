@@ -602,8 +602,9 @@ header {
   border-bottom: 1px solid #ededed;
   border-left: 1px solid #ededed;
 }
-.calculator_list li:nth-chlid(3n+1) {
+.calculator_list li:nth-child(3n+1) {
   border-left: none;
+  border-left-width: 0;
 }
 .calculator_list .calculator_1 a::before {
   background-color: #fd9500;
